@@ -2,8 +2,8 @@ import { useState, useMemo, useCallback, useRef, useEffect } from "react"
 import Papa from "papaparse"
 import {
   Search, Upload, ChevronRight, ChevronDown, Package, Tag,
-  Layers, BarChart3, X, Info, ArrowRight, ShoppingBag,
-  Folder, FolderOpen, Zap, Building2, SlidersHorizontal, Eye
+  Layers, BarChart3, X, ArrowRight, ShoppingBag,
+  Folder, Zap, Building2
 } from "lucide-react"
 
 /* ── THEME ─────────────────────────────────────────────────────────── */
@@ -119,7 +119,7 @@ const getFirstImg = (url) => {
   try { new URL(first); return first } catch { return null }
 }
 
-const lastSeg = (path) => (path || "").split(">").pop().trim()
+//const lastSeg = (path) => (path || "").split(">").pop().trim()
 
 const s = (obj) => Object.assign({}, obj)
 
