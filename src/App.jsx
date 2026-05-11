@@ -88,28 +88,14 @@ const CAT_MAP = {
 }
 
 /* ── SAMPLE DATA ────────────────────────────────────────────────────── */
+/* ── SAMPLE DATA (Disabled) ─────────────────────────────────────────── */
+/*
 const SAMPLE = [
   { product_id: "00030982", product_name: "Eco Mouse Pad 4282", brand_name: "Bottle Brand Testing", image: "https://example.com/images/product-4282.jpg", old_categories: "Home & Garden, Pet Supplies", reason_x: "Only Old Categories", s1: "STATIONERY > OFFICE SUPPLIES > DESK ACCESSORIES", s2: "STATIONERY > OFFICE SUPPLIES > LAPTOP ESSENTIALS", s3: "STATIONERY > LIFESTYLE > GIFTS", reason_y: "Electronic mouse pad falls under desk accessories." },
-  { product_id: "0004d8e5", product_name: "Essential Backpack 6579", brand_name: "Bottle Brand Testing", image: "https://example.com/images/product-6579.jpg", old_categories: "Automotive", reason_x: "Only Old Categories", s1: "STATIONERY > SCHOOL SUPPLIES > BAGS & LUNCH BOX", s2: "FASHION > MEN > ACCESSORIES > BAGS", s3: "FASHION > WOMEN > ACCESSORIES > BAGS", reason_y: "General high-quality backpack for performance/everyday use." },
-  { product_id: "00072d2e", product_name: "هودي كم مقطوع Keep Your Vision Clear", brand_name: "CULTURE WE ARE", image: "https://fcadd929ce4bd6713e2135b6a4a68163.cdn.bubble.io/f1753098737574x546812555171674050/Screenshot%202025-07-21%20145209.png", old_categories: "", reason_x: "No Mapping", s1: "FASHION > MEN > CLOTHING > STREETWEAR > T-shirts", s2: "FASHION > WOMEN > CLOTHING > RTW > T-shirt", s3: "FASHION > MEN > CLOTHING > LOUNGEWEAR", reason_y: "Hoodie listed as unisex or streetwear." },
-  { product_id: "00094047", product_name: "سديري طويل", brand_name: "Lavender design", image: "https://fcadd929ce4bd6713e2135b6a4a68163.cdn.bubble.io/f1751405459450x426792476472634500/IMG_0884.jpeg", old_categories: "Abayas & Dresses", reason_x: "Only Old Categories", s1: "FASHION > WOMEN > CLOTHING > OUTWEAR > Abaya", s2: "FASHION > WOMEN > CLOTHING > RTW > Top", s3: "FASHION > WOMEN > CLOTHING > RTW > Long dress", reason_y: "Long vest/outerwear garment." },
-  { product_id: "00096849", product_name: "ميدالية الدرعية", brand_name: "دَنَّة", image: "https://fcadd929ce4bd6713e2135b6a4a68163.cdn.bubble.io/f1744507792354x358211816999789000/DNNAH2732.jpeg", old_categories: "", reason_x: "No Mapping", s1: "STATIONERY > LIFESTYLE > KEY CHAIN", s2: "STATIONERY > LIFESTYLE > GIFTS", s3: "FASHION > WOMEN > ACCESSORIES > JEWELERY", reason_y: "Keychain product." },
-  { product_id: "000b37a2", product_name: "عباية 71 Fabrics", brand_name: "Fabrics by Z", image: "", old_categories: "", reason_x: "No Mapping", s1: "FASHION > WOMEN > CLOTHING > OUTWEAR > Abaya", s2: "FASHION > WOMEN > CLOTHING > RTW > Long dress", s3: "FASHION > WOMEN > CLOTHING > RTW > Maxi dress", reason_y: "Abaya." },
-  { product_id: "00127278", product_name: "Smart Face Wash 5911", brand_name: "Bottle Brand Testing", image: "https://example.com/images/product-5911.jpg", old_categories: "Food & Beverages, Home & Garden", reason_x: "Only Old Categories", s1: "FASHION > WOMEN > SKIN CARE & BEAUTY > SKIN CARE", s2: "FASHION > MEN > HAIRCARE & GROOMING > HAIR GROOMING", s3: "FASHION > KIDS > BABYCARE & PERFUMES > BODYCARE", reason_y: "Face wash." },
-  { product_id: "001578a4", product_name: "مجموعة ستيكرات كبسولات الحياة", brand_name: "هبة ستديو", image: "", old_categories: "", reason_x: "No Mapping", s1: "STATIONERY > LIFESTYLE > GIFTS", s2: "STATIONERY > ART > ART ACCESSORIES", s3: "STATIONERY > SCHOOL SUPPLIES > ACCESSORIES", reason_y: "Sticker set." },
-  { product_id: "001ba650", product_name: "تيشرت الغرب الامريكي", brand_name: "Kozi", image: "https://cdn.dsmcdn.com/ty1683/prod/QC/20250526/21/548064c7-e1d8-3084-899c-e99423b8d1a0/1_org_zoom.jpg", old_categories: "", reason_x: "No Mapping", s1: "FASHION > MEN > CLOTHING > STREETWEAR > T-shirts", s2: "FASHION > WOMEN > CLOTHING > RTW > T-shirt", s3: "FASHION > MEN > CLOTHING > LOUNGEWEAR", reason_y: "Unisex t-shirt." },
-  { product_id: "001bd5d5", product_name: "هودي خفيف ابيض", brand_name: "Llght OQ", image: "https://fcadd929ce4bd6713e2135b6a4a68163.cdn.bubble.io/f1753138987429x252039708397784320/G4qjYR147q2NCkDkjxW6QSMhG1FnMbmwcypyzrrW.png", old_categories: "Clothing & Textiles", reason_x: "Only Old Categories", s1: "FASHION > MEN > CLOTHING > STREETWEAR > Jackets", s2: "FASHION > WOMEN > CLOTHING > LOUNGEWEAR > Top", s3: "FASHION > MEN > CLOTHING > LOUNGEWEAR", reason_y: "Light hoodie." },
-  { product_id: "001d9a22", product_name: "اسياد الارض", brand_name: "كتب سقف", image: "", old_categories: "", reason_x: "No Mapping", s1: "STATIONERY > LIFESTYLE > GIFTS", s2: "STATIONERY > LIFESTYLE > DAILY CARDS", s3: "STATIONERY > LIFESTYLE > GAMES", reason_y: "Book/Publication." },
-  { product_id: "0026a3dc", product_name: "تشيرت هاواي اركب الأمواج", brand_name: "Kozi", image: "https://cdn.dsmcdn.com/ty1685/prod/QC/20250526/17/650cf388-73c5-30d2-bbd1-d10b60c6c89e/1_org_zoom.jpg", old_categories: "", reason_x: "No Mapping", s1: "FASHION > MEN > CLOTHING > STREETWEAR > T-shirts", s2: "FASHION > WOMEN > CLOTHING > RTW > T-shirt", s3: "FASHION > MEN > CLOTHING > BEACHWEAR", reason_y: "Casual printed t-shirt." },
-  { product_id: "002a874a", product_name: "شرشف صلاة", brand_name: "ايمان لاين", image: "https://raff-media-production.s3.me-south-1.amazonaws.com/products/b9217579-6c2d-4ffd-aca9-c42d5cd0d225", old_categories: "Dress", reason_x: "Only Old Categories", s1: "FASHION > WOMEN > CLOTHING > RTW > Long dress", s2: "FASHION > WOMEN > CLOTHING > RTW > Maxi dress", s3: "FASHION > WOMEN > CLOTHING > NIGHTWEAR", reason_y: "Prayer garment (Abaya/dress)." },
-  { product_id: "002ac59c", product_name: "Subha سبحة", brand_name: "crochetit", image: "https://fcadd929ce4bd6713e2135b6a4a68163.cdn.bubble.io/f1761468362335x443940916792657800/WhatsApp%20Image%202025-10-23%20at%2009.12.23_9a24b16b.jpg", old_categories: "Handmade crafts", reason_x: "Only Old Categories", s1: "FASHION > WOMEN > ACCESSORIES > JEWELERY", s2: "FASHION > MEN > ACCESSORIES > JEWELRY", s3: "STATIONERY > LIFESTYLE > GIFTS", reason_y: "Subha/Accessories." },
-  { product_id: "002df968", product_name: "Smart Running Shoes 5556", brand_name: "Bottle Brand Testing", image: "https://example.com/images/product-5556.jpg", old_categories: "Music, Toys & Games", reason_x: "Only Old Categories", s1: "FASHION > WOMEN > FOOTWEAR > FOOTWEAR", s2: "FASHION > MEN > FOOTWEAR > FOOTWEAR", s3: "FASHION > KIDS > FOOTWEAR > FOOTWEAR", reason_y: "Running shoes." },
-  { product_id: "0032205e", product_name: "Deluxe Canvas Sneakers 6575", brand_name: "Bottle Brand Testing", image: "https://example.com/images/product-6575.jpg", old_categories: "Health, Kitchen", reason_x: "Only Old Categories", s1: "FASHION > WOMEN > FOOTWEAR > FOOTWEAR", s2: "FASHION > MEN > FOOTWEAR > FOOTWEAR", s3: "FASHION > KIDS > FOOTWEAR > FOOTWEAR", reason_y: "Sneakers." },
-  { product_id: "0034acc7", product_name: "Ultra Puzzle Set 7022", brand_name: "Bottle Brand Testing", image: "https://example.com/images/product-7022.jpg", old_categories: "Automotive, Beauty & Personal Care", reason_x: "Only Old Categories", s1: "STATIONERY > LIFESTYLE > GAMES", s2: "STATIONERY > LIFESTYLE > GIFTS", s3: "STATIONERY > SCHOOL SUPPLIES > STUDY & PLANNING", reason_y: "Puzzle set." },
-  { product_id: "003ab6f1", product_name: "تراب كهرمان بلو مون", brand_name: "علم المسابيح", image: "https://cdn.salla.sa/QQBWw/l3xWTxFNiOy7BfpNdQP38rznA9zb8sEiMQ5nTU3O.jpg", old_categories: "", reason_x: "No Mapping", s1: "FASHION > WOMEN > ACCESSORIES > JEWELERY", s2: "FASHION > MEN > ACCESSORIES > JEWELRY", s3: "STATIONERY > LIFESTYLE > GIFTS", reason_y: "Subha (beads)." },
-  { product_id: "004f1a22", product_name: "Premium Oud Perfume", brand_name: "Naseem", image: "", old_categories: "Fragrance", reason_x: "Only Old Categories", s1: "FASHION > WOMEN > PERFUMES > Oud and Bakhoor", s2: "FASHION > MEN > PERFUMES > عود و بخور", s3: "HOME > HOME PERFUME", reason_y: "Traditional oud perfume suitable for both men and women." },
-  { product_id: "005c2b33", product_name: "Notebook A5 Leather Cover", brand_name: "!STUFF", image: "", old_categories: "Office Supplies", reason_x: "Only Old Categories", s1: "STATIONERY > OFFICE SUPPLIES > NOTEBOOKS", s2: "STATIONERY > GIFTBAR > BOXES", s3: "STATIONERY > LIFESTYLE > GIFTS", reason_y: "A5 leather notebook for office and personal use." },
+  ... (rest of sample data)
 ]
+*/
+const SAMPLE = []
 
 /* ── HELPERS ────────────────────────────────────────────────────────── */
 const getFirstImg = (url) => {
@@ -485,6 +471,21 @@ export default function Dashboard() {
     link.rel = "stylesheet"
     link.href = "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
     document.head.appendChild(link)
+
+    // Auto-load CSV from public folder
+    fetch("/data.csv")
+      .then(r => r.text())
+      .then(text => {
+        Papa.parse(text, {
+          header: true,
+          skipEmptyLines: true,
+          complete: ({ data: rows }) => {
+            setData(rows)
+            setLoadedCount(rows.length)
+          },
+        })
+      })
+      .catch(err => console.error("Error loading CSV:", err))
   }, [])
 
   const handleUpload = useCallback((e) => {
@@ -538,7 +539,7 @@ export default function Dashboard() {
   }, [data])
 
   const displayTotal = loadedCount || stats.total
-  const isSample = !loadedCount
+  //const isSample = !loadedCount
 
   return (
     <div style={{ fontFamily: "'DM Sans', sans-serif", background: T.bg, minHeight: "100vh", color: T.txt }}>
@@ -568,12 +569,7 @@ export default function Dashboard() {
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          {isSample && (
-            <span style={{ fontSize: 12, color: T.mut, background: T.goldBg, border: `1px solid ${T.goldBdr}`, borderRadius: 6, padding: "4px 10px" }}>
-              ⚠ Sample data — upload your CSV below
-            </span>
-          )}
-          {!isSample && (
+          {loadedCount && (
             <span style={{ fontSize: 12, color: T.green }}>
               ✓ {loadedCount.toLocaleString()} products loaded
             </span>
@@ -588,7 +584,7 @@ export default function Dashboard() {
               fontFamily: "'DM Sans', sans-serif",
             }}
           >
-            <Upload size={14} /> Upload CSV
+            <Upload size={14} /> Update CSV
           </button>
           <input ref={fileRef} type="file" accept=".csv" style={{ display: "none" }} onChange={handleUpload} />
         </div>
@@ -598,9 +594,9 @@ export default function Dashboard() {
       <div style={{ padding: "20px 24px 0", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
         <StatCard
           label="Total Products"
-          value={(isSample ? "25,000+" : displayTotal.toLocaleString())}
+          value={displayTotal.toLocaleString()}
           icon={<Package size={18} />}
-          note={isSample ? "Upload CSV for exact count" : "Full catalog loaded"}
+          note="Full catalog loaded from source"
           accent={false}
         />
         <StatCard
