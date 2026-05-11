@@ -121,7 +121,7 @@ const getFirstImg = (url) => {
 
 //const lastSeg = (path) => (path || "").split(">").pop().trim()
 
-const s = (obj) => Object.assign({}, obj)
+//const s = (obj) => Object.assign({}, obj)
 
 /* ── STAT CARD ──────────────────────────────────────────────────────── */
 function StatCard({ label, value, icon, note, accent }) {
@@ -192,7 +192,7 @@ function ProductCard({ product }) {
   const reason = product.reason_y || ""
   const noMapping = product.reason_x === "No Mapping"
   const imgUrl = getFirstImg(product.image)
-  const s1Parts = s1.split(">").map(p => p.trim()).filter(Boolean)
+  //const s1Parts = s1.split(">").map(p => p.trim()).filter(Boolean)
 
   return (
     <div
